@@ -76,10 +76,6 @@ public class picturebook extends AppCompatActivity {
         listView.setAdapter(customAdapter);
 
     }
-    public void return_to_menu (View v){
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-    }
 
     class CustomAdapter extends BaseAdapter{
 

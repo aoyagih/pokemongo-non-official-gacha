@@ -105,13 +105,13 @@ public class result extends AppCompatActivity {
 
     //図鑑画面へ
     public void topicturebook (View v){
-        Intent intent = new Intent(this,picturebook.class);
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 
     //もう一度ガチャを引く
     public void gachaagain (View v){
-        Intent intent = new Intent(this,gacha.class);
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 }
