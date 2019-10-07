@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             if(result.data[i] >= 1) count++;
         }
         int get_rate = (int) (count * 100 / IMAGES.length);
-        ((TextView) findViewById(R.id.textView2)).setText("集めた数 "+ count + "/11匹　コンプ率 " + get_rate + "%");
+        //((TextView) findViewById(R.id.textView2)).setText("集めた数 "+ count + "/11匹　コンプ率 " + get_rate + "%");
         ListView listView = (ListView)findViewById(R.id.Listview);
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
@@ -86,12 +87,12 @@ public class MainActivity extends AppCompatActivity {
         //最初の画面はHomeFragmentから表示する
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
-        //データの読み込み
+        /*//データの読み込み
         SharedPreferences preferences = getSharedPreferences("point",MODE_PRIVATE);
         p = preferences.getInt("p" , 0);
-        ((TextView) findViewById(R.id.point)).setText("" + p);
+        ((TextView) findViewById(R.id.point)).setText("" + p);*/
     }
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
         //データの読み込み
@@ -152,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                     .show();
 
         }
-    }
+    }*/
     @Override
     protected void onPause() {
         super.onPause();

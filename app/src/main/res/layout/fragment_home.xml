@@ -38,6 +38,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/doGacha"
             android:text="ガチャを引く(100p)"
             android:textSize="38sp"
             android:onClick="dogacha"/>
@@ -45,6 +46,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/doRareGacha"
             android:text="レアガチャを引く(300p)"
             android:textSize="38sp"
             android:onClick="doraregacha" />
